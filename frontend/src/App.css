@@ -1,0 +1,417 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  color: #17233b;
+  background: #f5f7fb;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 255px;
+  flex-shrink: 0;
+  background: #101d35;
+  color: white;
+  padding: 26px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px 35px;
+}
+
+.brand-icon, .stat-icon {
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #e8efff;
+  color: #3568dc;
+  width: 48px;
+  height: 48px;
+}
+
+.brand-icon {
+  background: #284577;
+  color: white;
+}
+
+.brand strong, .brand span {
+  display: block;
+}
+
+.brand span {
+  font-size: 12px;
+  color: #a9b8d2;
+  margin-top: 4px;
+}
+
+.nav-active {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #294777;
+  padding: 14px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 15px 10px;
+  border-top: 1px solid #34445e;
+  font-size: 12px;
+}
+
+.sidebar-footer span,
+.sidebar-footer strong {
+  display: block;
+  margin-top: 6px;
+}
+
+.sidebar-footer span {
+  color: #a9b8d2;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  height: 72px;
+  background: white;
+  border-bottom: 1px solid #e8ecf2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  font-weight: 600;
+}
+
+.user-tag {
+  background: #edf2ff;
+  color: #3568dc;
+  padding: 9px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.content {
+  padding: 35px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.page-heading, .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+p {
+  color: #8490a3;
+  font-size: 14px;
+  margin: 9px 0 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 11px 17px;
+  border: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.primary {
+  background: #3568dc;
+  color: white;
+}
+
+.primary:hover {
+  background: #2456c5;
+}
+
+.outline {
+  background: white;
+  color: #44516a;
+  border: 1px solid #dce3ed;
+}
+
+.stat-card {
+  margin: 28px 0;
+  background: white;
+  border: 1px solid #e8ecf2;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 320px;
+}
+
+.stat-card span {
+  display: block;
+  color: #8490a3;
+  font-size: 13px;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 29px;
+  margin-top: 5px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e8ecf2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: 24px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 24px 24px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  padding: 6px 6px 6px 15px;
+  color: #8490a3;
+}
+
+.searchbar input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  font-size: 13px;
+}
+
+th {
+  background: #f7f9fc;
+  color: #66748c;
+  font-weight: 600;
+}
+
+th, td {
+  padding: 17px 15px;
+  border-bottom: 1px solid #eef1f6;
+  white-space: nowrap;
+}
+
+tr:hover td {
+  background: #fafbfe;
+}
+
+.status {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 6px 11px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.active {
+  background: #e5f8ed;
+  color: #16834c;
+}
+
+.inactive {
+  background: #fff0df;
+  color: #a96a16;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button, .modal-header button,
+.notice button {
+  background: transparent;
+  border: none;
+  color: #3568dc;
+  padding: 6px;
+}
+
+.actions .danger-icon {
+  color: #dc4545;
+}
+
+.empty {
+  text-align: center;
+  padding: 45px;
+  color: #8490a3;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.notice.success {
+  background: #e5f8ed;
+  color: #16834c;
+}
+
+.notice.error {
+  background: #ffe8e8;
+  color: #c33131;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: #0b1635a8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.modal {
+  width: 100%;
+  max-width: 720px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 14px;
+  padding: 27px;
+  box-shadow: 0 25px 80px #0002;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-field span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-field input, .form-field select {
+  width: 100%;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  padding: 11px;
+  background: white;
+  outline-color: #3568dc;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid #e8ecf2;
+  padding-top: 22px;
+  margin-top: 26px;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .topbar {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-heading, .panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .searchbar {
+    flex-wrap: wrap;
+  }
+
+  .searchbar input {
+    width: calc(100% - 40px);
+  }
+}
