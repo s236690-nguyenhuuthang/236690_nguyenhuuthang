@@ -18,17 +18,8 @@ Hướng dẫn chạy ứng dụng ở môi trường phát triển:
 
 
 Link GitHub repository: https://github.com/s236690-nguyenhuuthang/236690_nguyenhuuthang.git
-Link Docker Hub Backend: 
-Link Docker Hub Frontend:
-Link Render App:
-Link Render API:
-Link MongoDB Atlas: 
-## câu 1: cấu trúc dự án
-- tình trạng hoàn thành
-## Câu 2: MongoDB Atlas
-
-- Database: 236690_nguyenhuuthang
-- Collection: employees
-- Số lượng nhân viên mẫu: 3
-- Mã nhân viên: NV001, NV002, NV003
-- Ràng buộc: employeeId duy nhất (Unique Index)
+Link Docker Hub Backend: https://hub.docker.com/r/236690nguyenhuuthang/backend
+Link Docker Hub Frontend: https://hub.docker.com/r/236690nguyenhuuthang/frontend
+Link Render App: https://web-236690.onrender.com
+Link Render API: https://api-236690.onrender.com
+Link MongoDB Atlas: mongodb+srv://thang:@cluster0.10lilzp.mongodb.net/
