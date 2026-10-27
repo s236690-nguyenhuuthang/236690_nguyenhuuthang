@@ -14,8 +14,9 @@ Quản lý mã nguồn: Git và GitHub.
 Lưu trữ Docker image: Docker Hub.
 Triển khai ứng dụng: Render.
 
-Hướng dẫn chạy ứng dụng ở môi trường phát triển:
 
+## Các Đường dẫn của bài:
+lưu ý pass monggo nằm trong file nộp 
 
 Link GitHub repository: https://github.com/s236690-nguyenhuuthang/236690_nguyenhuuthang.git
 Link Docker Hub Backend: https://hub.docker.com/r/236690nguyenhuuthang/backend
