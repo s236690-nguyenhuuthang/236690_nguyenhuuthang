@@ -22,5 +22,13 @@ Link Docker Hub Backend:
 Link Docker Hub Frontend:
 Link Render App:
 Link Render API:
-Link MongoDB Atlas:
-# 236690_nguyenhuuthang
+Link MongoDB Atlas: 
+## câu 1: cấu trúc dự án
+- tình trạng hoàn thành
+## Câu 2: MongoDB Atlas
+
+- Database: 236690_nguyenhuuthang
+- Collection: employees
+- Số lượng nhân viên mẫu: 3
+- Mã nhân viên: NV001, NV002, NV003
+- Ràng buộc: employeeId duy nhất (Unique Index)
